@@ -1,4 +1,4 @@
-# Final Project at TripleTen: News Explorer: Back-End :seedling:
+# Final Project at TripleTen: News Explorer: Front-End :seedling:
 
 ### TripleTen Web Development Program 2023
 
