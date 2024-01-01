@@ -220,19 +220,19 @@
     overflow: hidden;
   }
 
-  .header__navigation_type_mobile_active-logged-out {
+  .header__navigation_active-logged-out {
     transition: max-height 1s ease, min-height 1s ease;
     max-height: 174px;
     min-height: 174px;
   }
 
-  .header__navigation_type_mobile_active-logged-in {
+  .header__navigation_active-logged-in {
     transition: max-height 1s ease, min-height 1s ease;
     max-height: 230px;
     min-height: 230px;
   }
 
-  .header__navigation_type_mobile_inactive {
+  .header__navigation_inactive {
     transition: max-height 0.7s ease;
     max-height: 0;
   }

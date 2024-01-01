@@ -127,8 +127,8 @@ const Header = ({
       <nav
         className={`header__navigation ${
           mobileWidth && isMenuOpen
-            ? "header__navigation_type_mobile_active-logged-in"
-            : "header__navigation_type_mobile_inactive"
+            ? "header__navigation_active-logged-in"
+            : "header__navigation_inactive"
         }`}
       >
         <MobileNavigationOverlay mobileWidth={mobileWidth}>
@@ -202,8 +202,8 @@ const Header = ({
       <div
         className={`header__navigation ${
           mobileWidth && isMenuOpen
-            ? "header__navigation_type_mobile_active-logged-out"
-            : "header__navigation_type_mobile_inactive"
+            ? "header__navigation_active-logged-out"
+            : "header__navigation_inactive"
         }`}
       >
         <MobileNavigationOverlay mobileWidth={mobileWidth}>
