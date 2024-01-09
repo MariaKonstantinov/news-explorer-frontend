@@ -36,4 +36,4 @@ Technologies used:
 
 **:four_leaf_clover: Project Link**
 
-- [Link to Project](https://www.news-explorer.click)
+- [Link to Project]()
