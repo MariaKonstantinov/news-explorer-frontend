@@ -2,7 +2,6 @@ import React, { useState, useEffect, createRef } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import MobileNavigationOverlay from "../MobileNavigationOverlay/MobileNavigationOverlay";
-
 import MenuHamburgerWhiteIcon from "../../images/icons/menu-white_icon.svg";
 import MenuHamburgerBlackIcon from "../../images/icons/menu-black_icon.svg";
 import MenuCloseIcon from "../../images/icons/menu-close_icon.svg";
@@ -11,11 +10,12 @@ import MenuLogoutBlackIcon from "../../images/icons/menu-logout-black_icon.svg";
 
 const Header = ({
   loggedIn,
-  setLoggedIn,
+  currentUser,
   onSignInClick,
   setIsNewsCardListOpen,
   setSearchKeyword,
   onSavedArticlesPage,
+  onLogOut,
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mobileWidth, setMobileWidth] = useState(false);
@@ -98,7 +98,7 @@ const Header = ({
 
   function logOut() {
     handleNavigationClick();
-    setLoggedIn(false);
+    onLogOut();
   }
 
   return loggedIn ? (
@@ -168,7 +168,7 @@ const Header = ({
             to=""
             onClick={logOut}
           >
-            <p className="header__log-button-username">Maria</p>
+            <p className="header__log-button-username">{currentUser?.name}</p>
             <img
               className="header__log-button-logout-icon"
               src={logoutShowIcon}
@@ -195,7 +195,7 @@ const Header = ({
       </NavLink>
       <img
         className="header__menu-icon"
-        alt="menu icon"
+        alt="Menu icon"
         src={hamburgerShow}
         onClick={onHamburgerClick}
       />
