@@ -28,7 +28,7 @@ Back-End Implementation - two APIs:
 
 **:four_leaf_clover: This Project Technologies and Features**
 
-This Project is a frontend part of News Explorer Final Project at TripleTen. In this project users can search for news articles worldwide and save them to their own accounts. The project was created with React.
+This Project is a frontend part of News Explorer Final Project at TripleTen. In this project users can search for news articles worldwide and save them to their own accounts. The project was created with React18.
 
 Technologies used:
 
